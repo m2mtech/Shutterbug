@@ -17,6 +17,10 @@
 		5B7BA54C15BEFC9800185E9F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7BA54A15BEFC9800185E9F /* MainStoryboard_iPad.storyboard */; };
 		5B7BA55715BEFD1F00185E9F /* FlickrPhotoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7BA55615BEFD1F00185E9F /* FlickrPhotoTableViewController.m */; };
 		5B7BA55B15BEFF3E00185E9F /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7BA55A15BEFF3E00185E9F /* FlickrFetcher.m */; };
+		5BBD451F15C2EDCE00959585 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBD451E15C2EDCE00959585 /* MapViewController.m */; };
+		5BBD452215C2EE6900959585 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BBD452115C2EE6900959585 /* MapKit.framework */; };
+		5BBD452415C2EE8A00959585 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BBD452315C2EE8A00959585 /* CoreLocation.framework */; };
+		5BBD452715C2F19200959585 /* FlickrPhotoAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBD452615C2F19200959585 /* FlickrPhotoAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,12 @@
 		5B7BA55815BEFF3E00185E9F /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
 		5B7BA55915BEFF3E00185E9F /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
 		5B7BA55A15BEFF3E00185E9F /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		5BBD451D15C2EDCE00959585 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		5BBD451E15C2EDCE00959585 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		5BBD452115C2EE6900959585 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5BBD452315C2EE8A00959585 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5BBD452515C2F19200959585 /* FlickrPhotoAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoAnnotation.h; sourceTree = "<group>"; };
+		5BBD452615C2F19200959585 /* FlickrPhotoAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BBD452415C2EE8A00959585 /* CoreLocation.framework in Frameworks */,
+				5BBD452215C2EE6900959585 /* MapKit.framework in Frameworks */,
 				5B7BA53615BEFC9800185E9F /* UIKit.framework in Frameworks */,
 				5B7BA53815BEFC9800185E9F /* Foundation.framework in Frameworks */,
 				5B7BA53A15BEFC9800185E9F /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +68,8 @@
 		5B7BA52615BEFC9800185E9F = {
 			isa = PBXGroup;
 			children = (
+				5BBD452315C2EE8A00959585 /* CoreLocation.framework */,
+				5BBD452115C2EE6900959585 /* MapKit.framework */,
 				5B7BA53B15BEFC9800185E9F /* Shutterbug */,
 				5B7BA53415BEFC9800185E9F /* Frameworks */,
 				5B7BA53215BEFC9800185E9F /* Products */,
@@ -87,6 +101,10 @@
 				5B7BA54A15BEFC9800185E9F /* MainStoryboard_iPad.storyboard */,
 				5B7BA55515BEFD1F00185E9F /* FlickrPhotoTableViewController.h */,
 				5B7BA55615BEFD1F00185E9F /* FlickrPhotoTableViewController.m */,
+				5BBD451D15C2EDCE00959585 /* MapViewController.h */,
+				5BBD451E15C2EDCE00959585 /* MapViewController.m */,
+				5BBD452515C2F19200959585 /* FlickrPhotoAnnotation.h */,
+				5BBD452615C2F19200959585 /* FlickrPhotoAnnotation.m */,
 				5B7BA55815BEFF3E00185E9F /* FlickrAPIKey.h */,
 				5B7BA55915BEFF3E00185E9F /* FlickrFetcher.h */,
 				5B7BA55A15BEFF3E00185E9F /* FlickrFetcher.m */,
@@ -176,6 +194,8 @@
 				5B7BA54615BEFC9800185E9F /* AppDelegate.m in Sources */,
 				5B7BA55715BEFD1F00185E9F /* FlickrPhotoTableViewController.m in Sources */,
 				5B7BA55B15BEFF3E00185E9F /* FlickrFetcher.m in Sources */,
+				5BBD451F15C2EDCE00959585 /* MapViewController.m in Sources */,
+				5BBD452715C2F19200959585 /* FlickrPhotoAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +317,7 @@
 				5B7BA55415BEFC9800185E9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
